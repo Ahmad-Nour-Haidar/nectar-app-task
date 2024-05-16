@@ -21,12 +21,7 @@ class HomeScreen extends StatelessWidget {
                     useSafeArea: true,
                     context: context,
                     builder: (context) {
-                      return Padding(
-                        padding: EdgeInsets.only(
-                          bottom: MediaQuery.of(context).viewInsets.bottom,
-                        ),
-                        child: const AddItemWidget(),
-                      );
+                      return const AddItemWidget();
                     });
               },
               child: const Text('show'),

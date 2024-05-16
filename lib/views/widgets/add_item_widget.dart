@@ -52,6 +52,7 @@ class AddItemWidget extends StatelessWidget {
                 const CustomTextFormField(
                   hint: 'Price',
                   keyboardType: TextInputType.number,
+                  textInputAction: TextInputAction.done,
                 ),
                 const Divider(),
                 const Gap(32),
@@ -68,6 +69,7 @@ class AddItemWidget extends StatelessWidget {
                     ),
                   ),
                 ),
+                Gap(MediaQuery.of(context).viewInsets.bottom),
               ],
             ),
           ),
