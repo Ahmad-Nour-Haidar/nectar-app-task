@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task/views/widgets/custom_button.dart';
 
-import '../widgets/checkout_widget.dart';
+import '../widgets/add_item_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,9 +17,16 @@ class HomeScreen extends StatelessWidget {
             child: CustomButton(
               onPressed: () {
                 showModalBottomSheet(
+                    isScrollControlled: true,
+                    useSafeArea: true,
                     context: context,
                     builder: (context) {
-                      return const CheckoutWidget();
+                      return Padding(
+                        padding: EdgeInsets.only(
+                          bottom: MediaQuery.of(context).viewInsets.bottom,
+                        ),
+                        child: const AddItemWidget(),
+                      );
                     });
               },
               child: const Text('show'),

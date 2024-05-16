@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/constant/app_color.dart';
 import '../../core/constant/app_svgs.dart';
+import 'custom_button.dart';
+import 'custom_row_with_icon.dart';
 
 class CheckoutWidget extends StatelessWidget {
   const CheckoutWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
       padding: const EdgeInsets.all(24.0),
+      height: MediaQuery.sizeOf(context).height * .75,
       child: Column(
         children: [
           Row(
@@ -104,61 +108,26 @@ class CheckoutWidget extends StatelessWidget {
                       ),
                     ),
                   ),
-                )
+                ),
+                const Gap(32),
+                CustomButton(
+                  onPressed: () {},
+                  height: 65,
+                  radius: 20,
+                  child: const Text(
+                    'Place order',
+                    style: TextStyle(
+                      fontWeight: FontWeight.w500,
+                      fontSize: 18,
+                      color: AppColor.white,
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
         ],
       ),
-    );
-  }
-}
-
-class CustomRowWithIcon extends StatelessWidget {
-  const CustomRowWithIcon({
-    super.key,
-    required this.text1,
-    required this.onTap,
-    this.text2,
-    this.child,
-  });
-
-  final String text1;
-  final String? text2;
-  final VoidCallback onTap;
-  final Widget? child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Text(
-          text1,
-          style: const TextStyle(
-            fontWeight: FontWeight.w400,
-            fontSize: 18,
-            color: AppColor.grey,
-          ),
-        ),
-        const Spacer(),
-        if (child != null) child!,
-        if (text2 != null)
-          Text(
-            text2!,
-            style: const TextStyle(
-              fontWeight: FontWeight.w400,
-              fontSize: 16,
-              color: AppColor.fontColor,
-            ),
-          ),
-        IconButton(
-          onPressed: onTap,
-          icon: Transform.flip(
-            flipX: true,
-            child: const Icon(Icons.arrow_back_ios_rounded),
-          ),
-        )
-      ],
     );
   }
 }
