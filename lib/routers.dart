@@ -1,4 +1,5 @@
 import 'package:go_router/go_router.dart';
+import 'package:task/views/screens/home_screen.dart';
 import 'package:task/views/screens/onboarding_screen.dart';
 import 'package:task/views/screens/splash_screen.dart';
 
@@ -18,6 +19,10 @@ abstract final class AppRouter {
       GoRoute(
         path: onboardingScreen,
         builder: (context, state) => const OnboardingScreen(),
+      ),
+      GoRoute(
+        path: homeScreen,
+        builder: (context, state) => const HomeScreen(),
       ),
     ],
   );

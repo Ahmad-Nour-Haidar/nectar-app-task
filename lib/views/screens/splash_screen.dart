@@ -17,7 +17,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Future.delayed(const Duration(milliseconds: 1500), () {
+    Future.delayed(const Duration(milliseconds: 3200), () {
       context.push(AppRouter.onboardingScreen);
     });
     super.initState();
@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: AppColor.primary,
       body: Center(
         child: FadeIn(
-          duration: const Duration(milliseconds: 500),
+          duration: const Duration(seconds: 3),
           delay: const Duration(milliseconds: 100),
           child: SvgPicture.asset(AppSvgs.logo),
         ),
