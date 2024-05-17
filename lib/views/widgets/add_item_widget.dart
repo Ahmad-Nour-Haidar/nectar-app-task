@@ -69,7 +69,6 @@ class AddItemWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                Gap(MediaQuery.of(context).viewInsets.bottom),
               ],
             ),
           ),

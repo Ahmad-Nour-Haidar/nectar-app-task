@@ -123,7 +123,6 @@ class CheckoutWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                Gap(MediaQuery.of(context).viewInsets.bottom),
               ],
             ),
           ),

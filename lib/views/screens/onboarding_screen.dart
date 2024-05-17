@@ -13,9 +13,13 @@ class OnboardingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          image: DecorationImage(
-        image: AssetImage(AppImages.onbording),
-      )),
+        image: DecorationImage(
+          fit: BoxFit.fill,
+          image: AssetImage(
+            AppImages.onbording,
+          ),
+        ),
+      ),
       child: Scaffold(
         backgroundColor: AppColor.transparent,
         body: Column(

@@ -12,7 +12,7 @@ abstract final class AppRouter {
   static const orderAcceptedScreen = '/orderAcceptedScreen';
 
   static final router = GoRouter(
-    initialLocation: orderAcceptedScreen,
+    initialLocation: splashScreen,
     routes: [
       GoRoute(
         path: splashScreen,

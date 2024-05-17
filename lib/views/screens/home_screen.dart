@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task/views/widgets/checkout_widget.dart';
 import 'package:task/views/widgets/custom_button.dart';
 
 import '../widgets/add_item_widget.dart';
@@ -21,7 +22,12 @@ class HomeScreen extends StatelessWidget {
                     useSafeArea: true,
                     context: context,
                     builder: (context) {
-                      return const AddItemWidget();
+                      return Padding(
+                        padding: EdgeInsets.only(
+                          bottom: MediaQuery.of(context).viewInsets.bottom,
+                        ),
+                        child: const CheckoutWidget(),
+                      );
                     });
               },
               child: const Text('show'),
