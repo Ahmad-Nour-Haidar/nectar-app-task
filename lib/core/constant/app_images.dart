@@ -12,7 +12,7 @@ abstract final class AppImages {
   static const dairyEggs = '$_path/dairy-eggs.png';
   static const exploreIcon = '$_path/explore-icon.png';
   static const favoriteIcon = '$_path/favorite-icon.png';
-  static const frashFruits = '$_path/frash-fruits.png';
+  static const frashFruits = '$_path/fresh-fruits.png';
   static const ginger = '$_path/ginger.png';
   static const logo = '$_path/logo.png';
   static const meetFish = '$_path/meet-fish.png';

@@ -4,6 +4,7 @@ import 'package:task/views/widgets/bottom_nav_bar_item.dart';
 
 import '../../../../core/assets/app_svgs.dart';
 import '../widgets/bottom_nav_bar.dart';
+import '../widgets/find_products_view.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -36,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         dragStartBehavior: DragStartBehavior.down,
         children: const [
           Center(child: Text('Shop')),
+          FindProductsScreen(),
           Center(child: Text('Favorite')),
           Center(child: Text('Account')),
         ],
