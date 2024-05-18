@@ -2,17 +2,20 @@
 
 ## Online Grocery Store App
 
-A new Flutter project.
+### This is an awesome task. For training in Flutter framework
 
-## Getting Started
+![add-item.png](assets%2Fapp-preview%2Fadd-item.png)
 
-This project is a starting point for a Flutter application.
+![beverages.png](assets%2Fapp-preview%2Fbeverages.png)
 
-A few resources to get you started if this is your first Flutter project:
+![checkout.png](assets%2Fapp-preview%2Fcheckout.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![explore.png](assets%2Fapp-preview%2Fexplore.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![my-cart.png](assets%2Fapp-preview%2Fmy-cart.png)
+
+![onboarding.png](assets%2Fapp-preview%2Fonboarding.png)
+
+![order-accepted.png](assets%2Fapp-preview%2Forder-accepted.png)
+
+![splash-screen.png](assets%2Fapp-preview%2Fsplash-screen.png)
