@@ -2,9 +2,9 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
+import 'package:task/core/assets/app_svgs.dart';
 import 'package:task/routers.dart';
 
-import '../../core/constant/app_svgs.dart';
 import '../../core/theme/app_colors.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -29,9 +29,9 @@ class _SplashScreenState extends State<SplashScreen> {
       backgroundColor: AppColors.primary,
       body: Center(
         child: FadeIn(
-          duration: const Duration(seconds: 3),
+          duration: const Duration(milliseconds: 2500),
           delay: const Duration(milliseconds: 100),
-          child: SvgPicture.asset(AppSvgs.logo),
+          child: SvgPicture.asset(AppSVGs.splashLogo),
         ),
       ),
     );

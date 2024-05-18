@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_colors.dart';
-import '../../../entities/beverage_entity.dart';
+import '../../../model/beverage_model.dart';
 
 part 'volume_text.dart';
 part 'add_icon_button.dart';
@@ -11,7 +11,7 @@ class BeverageCard extends StatelessWidget {
     super.key,
     required this.beverage,
   });
-  final BeverageEntity beverage;
+  final BeverageModel beverage;
   @override
   Widget build(BuildContext context) {
     return Container(

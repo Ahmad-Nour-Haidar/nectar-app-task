@@ -4,8 +4,8 @@ import 'package:task/routers.dart';
 
 import '../../../../core/assets/app_images.dart';
 import '../../core/theme/app_colors.dart';
-import '../../entities/category_entity.dart';
-import 'find_product/category_card.dart';
+import '../../model/category_model.dart';
+import '../widgets/find_product/category_card.dart';
 
 class FindProductsScreen extends StatelessWidget {
   const FindProductsScreen({super.key});
@@ -40,7 +40,7 @@ class FindProductsScreen extends StatelessWidget {
                     CategoryCard(
                       backgroundColor: AppColors.lightGreen,
                       borderColor: AppColors.lightGreenBorder,
-                      category: CategoryEntity(
+                      category: const CategoryModel(
                         title: 'Fresh Fruits & Vegetable',
                         image: AppImages.freshFruits,
                       ),
@@ -49,7 +49,7 @@ class FindProductsScreen extends StatelessWidget {
                     CategoryCard(
                       backgroundColor: AppColors.lightOrange,
                       borderColor: AppColors.lightOrangeBorder,
-                      category: CategoryEntity(
+                      category: const CategoryModel(
                         title: 'Cooking Oil & Ghee',
                         image: AppImages.cooking,
                       ),
@@ -58,7 +58,7 @@ class FindProductsScreen extends StatelessWidget {
                     CategoryCard(
                       backgroundColor: AppColors.lightRed,
                       borderColor: AppColors.lightRedBorder,
-                      category: CategoryEntity(
+                      category: const CategoryModel(
                         title: 'Meat & Fish',
                         image: AppImages.meetFish,
                       ),
@@ -67,7 +67,7 @@ class FindProductsScreen extends StatelessWidget {
                     CategoryCard(
                       backgroundColor: AppColors.lightPurple,
                       borderColor: AppColors.lightPurpleBorder,
-                      category: CategoryEntity(
+                      category: const CategoryModel(
                         title: 'Bakery & Snacks',
                         image: AppImages.bakerySnacks,
                       ),
@@ -76,7 +76,7 @@ class FindProductsScreen extends StatelessWidget {
                     CategoryCard(
                       backgroundColor: AppColors.lightYellow,
                       borderColor: AppColors.lightYellowBorder,
-                      category: CategoryEntity(
+                      category: const CategoryModel(
                         title: 'Dairy & Eggs',
                         image: AppImages.dairyEggs,
                       ),
@@ -85,18 +85,18 @@ class FindProductsScreen extends StatelessWidget {
                     CategoryCard(
                       backgroundColor: AppColors.lightGreen2,
                       borderColor: AppColors.lightGreen2Border,
-                      category: CategoryEntity(
+                      category: const CategoryModel(
                         title: 'Beverages',
                         image: AppImages.beverages,
                       ),
                       onPressed: () {
-                        GoRouter.of(context).push(AppRouter.beveragesScreen);
+                        context.push(AppRouter.beveragesScreen);
                       },
                     ),
                     CategoryCard(
                       backgroundColor: AppColors.lightPurple2,
                       borderColor: AppColors.lightPurple2Border,
-                      category: CategoryEntity(
+                      category: const CategoryModel(
                         title: 'Frash Fruits & Vegetable',
                         image: AppImages.freshFruits,
                       ),
@@ -105,7 +105,7 @@ class FindProductsScreen extends StatelessWidget {
                     CategoryCard(
                       backgroundColor: AppColors.lightRed2,
                       borderColor: AppColors.lightRed2Border,
-                      category: CategoryEntity(
+                      category: const CategoryModel(
                         title: 'Frash Fruits & Vegetable',
                         image: AppImages.freshFruits,
                       ),

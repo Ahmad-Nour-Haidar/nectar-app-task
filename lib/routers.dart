@@ -3,6 +3,7 @@ import 'package:task/views/screens/cart/order_placed_view.dart';
 import 'package:task/views/screens/home_screen.dart';
 import 'package:task/views/screens/onboarding_screen.dart';
 import 'package:task/views/screens/splash_screen.dart';
+import 'package:task/views/screens/beverages_screen.dart';
 
 // GoRouter configuration
 abstract final class AppRouter {
@@ -31,6 +32,12 @@ abstract final class AppRouter {
         path: orderAcceptedScreen,
         builder: (context, state) {
           return const OrderAcceptedScreen();
+        },
+      ),
+      GoRoute(
+        path: beveragesScreen,
+        builder: (context, GoRouterState state) {
+          return const BeveragesScreen();
         },
       ),
     ],

@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:task/core/theme/app_colors.dart';
+import 'package:task/views/widgets/cart/add_item_widget.dart';
 
 import '../../core/assets/app_images.dart';
-import '../../entities/beverage_entity.dart';
-import 'add_button.dart';
-import 'find_product/beverage_card.dart';
+import '../../model/beverage_model.dart';
+import '../widgets/add_button.dart';
+import '../widgets/find_product/beverage_card.dart';
+
 part '../widgets/find_product/beverage_app_bar.dart';
-class BeveragesView extends StatelessWidget {
-  const BeveragesView({super.key});
+
+class BeveragesScreen extends StatelessWidget {
+  const BeveragesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,9 +26,9 @@ class BeveragesView extends StatelessWidget {
             crossAxisSpacing: 16,
             childAspectRatio: 7 / 10,
           ),
-          children: [
+          children: const [
             BeverageCard(
-              beverage: BeverageEntity(
+              beverage: BeverageModel(
                 image: AppImages.coke,
                 name: 'Deit Coke',
                 volume: '355ml',
@@ -32,7 +36,7 @@ class BeveragesView extends StatelessWidget {
               ),
             ),
             BeverageCard(
-              beverage: BeverageEntity(
+              beverage: BeverageModel(
                 image: AppImages.sprite,
                 name: 'Sprite Can',
                 volume: '325ml',
@@ -40,7 +44,7 @@ class BeveragesView extends StatelessWidget {
               ),
             ),
             BeverageCard(
-              beverage: BeverageEntity(
+              beverage: BeverageModel(
                 image: AppImages.apple,
                 name: 'Apple & Grape Juice',
                 volume: '2L',
@@ -48,7 +52,7 @@ class BeveragesView extends StatelessWidget {
               ),
             ),
             BeverageCard(
-              beverage: BeverageEntity(
+              beverage: BeverageModel(
                 image: AppImages.orange,
                 name: 'Orange Juice',
                 volume: '2L',
@@ -56,7 +60,7 @@ class BeveragesView extends StatelessWidget {
               ),
             ),
             BeverageCard(
-              beverage: BeverageEntity(
+              beverage: BeverageModel(
                 image: AppImages.coca,
                 name: 'Coca Cola Can',
                 volume: '325ml',
@@ -64,7 +68,7 @@ class BeveragesView extends StatelessWidget {
               ),
             ),
             BeverageCard(
-              beverage: BeverageEntity(
+              beverage: BeverageModel(
                 image: AppImages.pepsi,
                 name: 'Pepsi Can',
                 volume: '330ml',

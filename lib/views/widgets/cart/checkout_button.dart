@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:task/routers.dart';
 
 import '../../../core/theme/app_colors.dart';
-import '../checkout_widget.dart';
+import 'checkout_widget.dart';
 
 class CheckoutButton extends StatelessWidget {
   const CheckoutButton({
@@ -19,6 +17,7 @@ class CheckoutButton extends StatelessWidget {
           showModalBottomSheet(
               isScrollControlled: true,
               useSafeArea: true,
+              backgroundColor: AppColors.grey2,
               context: context,
               builder: (context) {
                 return Padding(

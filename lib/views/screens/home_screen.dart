@@ -1,10 +1,10 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:task/views/widgets/bottom_nav_bar_item.dart';
+import 'package:task/model/bottom_nav_bar_item.dart';
 
 import '../../../../core/assets/app_svgs.dart';
-import '../widgets/bottom_nav_bar.dart';
-import '../widgets/find_products_view.dart';
+import '../widgets/home/bottom_nav_bar.dart';
+import 'find_products_screen.dart';
 import 'cart/cart_view.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -44,28 +44,31 @@ class _HomeScreenState extends State<HomeScreen> {
           Center(child: Text('Account')),
         ],
       ),
-      bottomNavigationBar: BottomNavBar(items: [
-        BottomNavBarItem(
-          svgPicturePath: AppSVGs.shop,
-          label: 'Shop',
-        ),
-        BottomNavBarItem(
-          svgPicturePath: AppSVGs.explore,
-          label: 'Explore',
-        ),
-        BottomNavBarItem(
-          svgPicturePath: AppSVGs.cart,
-          label: 'Cart',
-        ),
-        BottomNavBarItem(
-          svgPicturePath: AppSVGs.favorite,
-          label: 'Favorite',
-        ),
-        BottomNavBarItem(
-          svgPicturePath: AppSVGs.account,
-          label: 'Account',
-        ),
-      ], pageController: _controller),
+      bottomNavigationBar: BottomNavBar(
+        pageController: _controller,
+        items: [
+          BottomNavBarItem(
+            svgPicturePath: AppSVGs.shop,
+            label: 'Shop',
+          ),
+          BottomNavBarItem(
+            svgPicturePath: AppSVGs.explore,
+            label: 'Explore',
+          ),
+          BottomNavBarItem(
+            svgPicturePath: AppSVGs.cart,
+            label: 'Cart',
+          ),
+          BottomNavBarItem(
+            svgPicturePath: AppSVGs.favorite,
+            label: 'Favorite',
+          ),
+          BottomNavBarItem(
+            svgPicturePath: AppSVGs.account,
+            label: 'Account',
+          ),
+        ],
+      ),
     );
   }
 }

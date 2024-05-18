@@ -5,6 +5,7 @@ abstract final class AppImages {
   static const bellPepperRed = '$_path/bell-pepper-red.png';
   static const beverages = '$_path/beverages.png';
   static const cartIcon = '$_path/cart-icon.png';
+  static const check = '$_path/check.png';
   static const coca = '$_path/coca.png';
   static const coke = '$_path/coke.png';
   static const cooking = '$_path/coocking-oil.png';

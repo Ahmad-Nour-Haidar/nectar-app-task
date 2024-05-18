@@ -1,4 +1,3 @@
-
 class BottomNavBarItem {
   final String svgPicturePath;
   final String label;

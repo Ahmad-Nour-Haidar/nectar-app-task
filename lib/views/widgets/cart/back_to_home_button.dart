@@ -10,7 +10,7 @@ class BackToHomeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: () {
-        GoRouter.of(context).pop();
+        context.pop();
       },
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.white,

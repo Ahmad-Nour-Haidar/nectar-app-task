@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
-import 'package:task/core/constant/app_images.dart';
 import 'package:task/routers.dart';
 import 'package:task/views/widgets/custom_button.dart';
 
+import '../../core/assets/app_images.dart';
 import '../../core/theme/app_colors.dart';
 
 class OnboardingScreen extends StatelessWidget {

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/theme/app_colors.dart';
-import '../../../entities/cart_item.dart';
+import '../../../model/cart_item.dart';
 
 part './cart_item_counter.dart';
 

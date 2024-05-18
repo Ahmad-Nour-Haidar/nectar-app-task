@@ -3,11 +3,11 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/constant/app_svgs.dart';
-import '../../core/theme/app_colors.dart';
-import '../../routers.dart';
-import 'custom_button.dart';
-import 'custom_row_with_icon.dart';
+import '../../../core/assets/app_svgs.dart';
+import '../../../core/theme/app_colors.dart';
+import '../../../routers.dart';
+import '../custom_button.dart';
+import '../custom_row_with_icon.dart';
 
 class CheckoutWidget extends StatelessWidget {
   const CheckoutWidget({super.key});
@@ -50,7 +50,7 @@ class CheckoutWidget extends StatelessWidget {
                 const Divider(),
                 CustomRowWithIcon(
                   text1: 'Payment',
-                  child: SvgPicture.asset(AppSvgs.payment),
+                  child: SvgPicture.asset(AppSVGs.payment),
                   onTap: () {},
                 ),
                 const Divider(),

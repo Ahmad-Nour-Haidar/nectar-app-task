@@ -6,9 +6,11 @@ class _BottomNavBarButton extends StatelessWidget {
     required this.barItem,
     required this.onPressed,
   });
+
   final BottomNavBarItem barItem;
   final bool isSelected;
   final void Function() onPressed;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -24,12 +26,15 @@ class _BottomNavBarButton extends StatelessWidget {
               BlendMode.srcIn,
             ),
           ),
-          Text(
-            barItem.label,
-            style: TextStyle(
-              fontWeight: FontWeight.w400,
-              fontSize: 14,
-              color: isSelected ? AppColors.primary : Colors.black,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              barItem.label,
+              style: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 14,
+                color: isSelected ? AppColors.primary : Colors.black,
+              ),
             ),
           ),
         ],

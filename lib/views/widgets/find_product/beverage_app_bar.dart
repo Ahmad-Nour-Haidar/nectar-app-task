@@ -1,4 +1,4 @@
-part of '../beverages_view.dart';
+part of '../../screens/beverages_screen.dart';
 
 class _BeverageAppBar extends StatelessWidget implements PreferredSizeWidget {
   const _BeverageAppBar();
@@ -8,8 +8,7 @@ class _BeverageAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       leading: IconButton(
         onPressed: () {
-          // todo
-          GoRouter.of(context).pop();
+          context.pop();
         },
         icon: const Icon(Icons.arrow_back_ios_new),
       ),
@@ -24,7 +23,24 @@ class _BeverageAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: AddButtonSVG(onPressed: () {}, size: 30),
+          child: AddButtonSVG(
+            onPressed: () {
+              showModalBottomSheet(
+                  isScrollControlled: true,
+                  useSafeArea: true,
+                  context: context,
+                  backgroundColor: AppColors.grey2,
+                  builder: (context) {
+                    return Padding(
+                      padding: EdgeInsets.only(
+                        bottom: MediaQuery.of(context).viewInsets.bottom,
+                      ),
+                      child: const AddItemWidget(),
+                    );
+                  });
+            },
+            size: 30,
+          ),
         ),
       ],
     );

@@ -3,8 +3,8 @@ import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:task/views/widgets/custom_text_form_field.dart';
 
-import '../../core/theme/app_colors.dart';
-import 'custom_button.dart';
+import '../../../core/theme/app_colors.dart';
+import '../custom_button.dart';
 
 class AddItemWidget extends StatelessWidget {
   const AddItemWidget({super.key});
@@ -13,7 +13,7 @@ class AddItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(24.0),
-      height: MediaQuery.sizeOf(context).height * .75,
+      height: MediaQuery.sizeOf(context).height * .50,
       child: Column(
         children: [
           Row(

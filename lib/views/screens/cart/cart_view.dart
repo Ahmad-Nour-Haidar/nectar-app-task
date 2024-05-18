@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/assets/app_images.dart';
-import '../../../entities/cart_item.dart';
+import '../../../model/cart_item.dart';
 import '../../widgets/cart/cart_item_card.dart';
 import '../../widgets/cart/checkout_button.dart';
 
@@ -22,17 +22,15 @@ class CartView extends StatelessWidget {
         centerTitle: true,
         toolbarHeight: 60,
       ),
-      body: ListView(
-        shrinkWrap: true,
+      bottomNavigationBar: const CheckoutButton(),
+      body: Column(
         children: [
           Divider(
             color: Colors.grey.shade300,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          Expanded(
             child: ListView(
-              physics: const NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
+              padding: const EdgeInsets.symmetric(horizontal: 24.0),
               children: [
                 CartItemCard(
                   cartItem: CartItem(
@@ -68,10 +66,9 @@ class CartView extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
         ],
       ),
-      bottomNavigationBar: const CheckoutButton(),
     );
   }
 }

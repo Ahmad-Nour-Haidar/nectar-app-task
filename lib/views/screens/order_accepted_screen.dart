@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:task/core/constant/app_images.dart';
 
+import '../../core/assets/app_images.dart';
 import '../../core/theme/app_colors.dart';
 import '../widgets/custom_button.dart';
 

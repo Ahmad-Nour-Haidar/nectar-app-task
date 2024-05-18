@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
-import '../../../entities/category_entity.dart';
+import '../../../model/category_model.dart';
 
 class CategoryCard extends StatelessWidget {
   const CategoryCard({
     super.key,
     required this.backgroundColor,
     required this.borderColor,
-    required this.onPressed, required this.category,
+    required this.onPressed,
+    required this.category,
   });
   final Color backgroundColor;
   final Color borderColor;
-  final CategoryEntity category;
+  final CategoryModel category;
   final void Function() onPressed;
   @override
   Widget build(BuildContext context) {
