@@ -2,7 +2,6 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
-import 'package:task/core/constant/app_color.dart';
 import 'package:task/routers.dart';
 
 import '../../core/constant/app_svgs.dart';

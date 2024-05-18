@@ -8,8 +8,10 @@ import 'package:task/views/screens/splash_screen.dart';
 abstract final class AppRouter {
   static const splashScreen = '/';
   static const onboardingScreen = '/onboardingScreen';
-  static const homeScreen = '/homeScreen';
+  static const homeView = '/homeView';
   static const orderAcceptedScreen = '/orderAcceptedScreen';
+  static const beveragesView = '/beverages';
+  static const orderAcceptedView = '/orderAccepted';
 
   static final router = GoRouter(
     initialLocation: splashScreen,
@@ -23,7 +25,7 @@ abstract final class AppRouter {
         builder: (context, state) => const OnboardingScreen(),
       ),
       GoRoute(
-        path: homeScreen,
+        path: homeView,
         builder: (context, state) => const HomeScreen(),
       ),
       GoRoute(

@@ -54,7 +54,7 @@ class OnboardingScreen extends StatelessWidget {
                     const Gap(50),
                     CustomButton(
                       onPressed: () {
-                        context.go(AppRouter.homeScreen);
+                        context.go(AppRouter.homeView);
                       },
                       height: 65,
                       radius: 20,

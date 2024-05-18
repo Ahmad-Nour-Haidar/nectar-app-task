@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/constant/app_color.dart';
 import '../../core/constant/app_svgs.dart';
 import '../../core/theme/app_colors.dart';
 import 'custom_button.dart';

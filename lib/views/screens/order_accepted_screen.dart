@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:task/core/constant/app_color.dart';
 import 'package:task/core/constant/app_images.dart';
 
 import '../../core/theme/app_colors.dart';
