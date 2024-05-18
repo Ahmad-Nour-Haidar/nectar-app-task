@@ -4,20 +4,20 @@
 
 ### This is an awesome task. For training in Flutter framework
 
-### App preview
+## App Preview
 
-![add-item.png](assets%2Fapp-preview%2Fadd-item.png | width=100)
+<img src="assets/app-preview/add-item.png" alt="Add Item" height="200" width="100">
 
-![beverages.png](assets%2Fapp-preview%2Fbeverages.png)
+<img src="assets/app-preview/beverages.png" alt="Beverages" height="200" width="100">
 
-![checkout.png](assets%2Fapp-preview%2Fcheckout.png)
+<img src="assets/app-preview/checkout.png" alt="Checkout" height="200" width="100">
 
-![explore.png](assets%2Fapp-preview%2Fexplore.png)
+<img src="assets/app-preview/explore.png" alt="Explore" height="200" width="100">
 
-![my-cart.png](assets%2Fapp-preview%2Fmy-cart.png)
+<img src="assets/app-preview/my-cart.png" alt="My Cart" height="200" width="100">
 
-![onboarding.png](assets%2Fapp-preview%2Fonboarding.png)
+<img src="assets/app-preview/onboarding.png" alt="Onboarding" height="200" width="100">
 
-![order-accepted.png](assets%2Fapp-preview%2Forder-accepted.png)
+<img src="assets/app-preview/order-accepted.png" alt="Order Accepted" height="200" width="100">
 
-![splash-screen.png](assets%2Fapp-preview%2Fsplash-screen.png)
+<img src="assets/app-preview/splash-screen.png" alt="Splash Screen" height="200" width="100">
