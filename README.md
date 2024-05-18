@@ -6,7 +6,7 @@
 
 ## App Preview
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+<div style="display: flex; flex-wrap: wrap; gap: 50px;">
 
 <img src="assets/app-preview/splash-screen.png" alt="Splash Screen" height="400" width="200">
 
