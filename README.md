@@ -11,7 +11,7 @@ as little as one hour.
 ## Table of Contents
 
 - [Features](#features)
-- [App Preview](#App Preview)
+- [Screenshots](#screenshots)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -27,7 +27,7 @@ as little as one hour.
 - **Order Tracking**: Track your order status after placing it.
 - **Account Management**: Manage your profile and view order history.
 
-## App Preview
+## Screenshots
 
 <div style="display: flex; flex-wrap: wrap; gap: 50px;">
 
@@ -63,12 +63,12 @@ To get a local copy of the app up and running, follow these simple steps.
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/your-username/nectar-app.git
+    git clone https://github.com/Ahmad-Nour-Haidar/nectar-app-task.git
     ```
 
 2. **Navigate to the project directory**:
     ```sh
-    cd nectar-app
+    cd nectar-app-task
     ```
 
 3. **Install the dependencies**:
