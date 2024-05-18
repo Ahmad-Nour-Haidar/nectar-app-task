@@ -15,7 +15,12 @@ class ThemeManager {
       fontFamily: AppFonts.poppins,
       brightness: Brightness.light,
       useMaterial3: true,
+      applyElevationOverlayColor: false,
       primaryColor: AppColors.primary,
+      appBarTheme: const AppBarTheme(
+        centerTitle: true,
+        scrolledUnderElevation: 0.0,
+      ),
       inputDecorationTheme: const InputDecorationTheme(
         enabledBorder: InputBorder.none,
         focusedBorder: InputBorder.none,

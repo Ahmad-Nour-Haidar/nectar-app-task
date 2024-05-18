@@ -90,7 +90,7 @@ class FindProductsScreen extends StatelessWidget {
                         image: AppImages.beverages,
                       ),
                       onPressed: () {
-                        GoRouter.of(context).push(AppRouter.beveragesView);
+                        GoRouter.of(context).push(AppRouter.beveragesScreen);
                       },
                     ),
                     CategoryCard(

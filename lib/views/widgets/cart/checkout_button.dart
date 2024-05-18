@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:task/routers.dart';
 
 import '../../../core/theme/app_colors.dart';
+import '../checkout_widget.dart';
 
 class CheckoutButton extends StatelessWidget {
   const CheckoutButton({
@@ -15,7 +16,18 @@ class CheckoutButton extends StatelessWidget {
       padding: const EdgeInsets.only(left: 24, right: 24, bottom: 16),
       child: ElevatedButton(
         onPressed: () {
-          GoRouter.of(context).push(AppRouter.orderAcceptedView);
+          showModalBottomSheet(
+              isScrollControlled: true,
+              useSafeArea: true,
+              context: context,
+              builder: (context) {
+                return Padding(
+                  padding: EdgeInsets.only(
+                    bottom: MediaQuery.of(context).viewInsets.bottom,
+                  ),
+                  child: const CheckoutWidget(),
+                );
+              });
         },
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,

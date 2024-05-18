@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/constant/app_svgs.dart';
 import '../../core/theme/app_colors.dart';
+import '../../routers.dart';
 import 'custom_button.dart';
 import 'custom_row_with_icon.dart';
 
@@ -15,7 +16,7 @@ class CheckoutWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(24.0),
-      height: MediaQuery.sizeOf(context).height * .75,
+      height: MediaQuery.sizeOf(context).height * .65,
       child: Column(
         children: [
           Row(
@@ -111,7 +112,10 @@ class CheckoutWidget extends StatelessWidget {
                 ),
                 const Gap(32),
                 CustomButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.pop();
+                    context.push(AppRouter.orderAcceptedScreen);
+                  },
                   height: 65,
                   radius: 20,
                   child: const Text(

@@ -5,8 +5,8 @@ import '../../../core/assets/app_svgs.dart';
 import '../../widgets/cart/back_to_home_button.dart';
 import '../../widgets/cart/track_order_button.dart';
 
-class OrderAcceptedView extends StatelessWidget {
-  const OrderAcceptedView({super.key});
+class OrderAcceptedScreen extends StatelessWidget {
+  const OrderAcceptedScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
