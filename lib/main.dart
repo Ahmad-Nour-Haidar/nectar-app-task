@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: AppRouter.router,
-      title: 'Flutter Task',
+      title: 'nectar',
       theme: ThemeManager.light,
     );
   }
