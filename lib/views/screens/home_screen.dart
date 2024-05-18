@@ -5,6 +5,7 @@ import 'package:task/views/widgets/bottom_nav_bar_item.dart';
 import '../../../../core/assets/app_svgs.dart';
 import '../widgets/bottom_nav_bar.dart';
 import '../widgets/find_products_view.dart';
+import 'cart/cart_view.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -38,6 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: const [
           Center(child: Text('Shop')),
           FindProductsScreen(),
+          CartView(),
           Center(child: Text('Favorite')),
           Center(child: Text('Account')),
         ],
