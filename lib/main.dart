@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:task/core/constant/app_color.dart';
+import 'package:task/core/theme/theme_manager.dart';
 import 'package:task/routers.dart';
 
 void main() {
@@ -15,17 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: AppRouter.router,
-      theme: ThemeData(
-        useMaterial3: true,
-        fontFamily: "Poppins",
-        primaryColor: AppColor.primary,
-        colorScheme: ColorScheme.fromSeed(seedColor: AppColor.primary),
-        inputDecorationTheme: const InputDecorationTheme(
-          enabledBorder: InputBorder.none,
-          focusedBorder: InputBorder.none,
-        ),
-      ),
       title: 'Flutter Task',
+      theme: ThemeManager.light,
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../core/constant/app_color.dart';
+import '../../core/theme/app_colors.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
@@ -11,7 +12,7 @@ class CustomButton extends StatelessWidget {
     this.height = 50,
     this.width = double.infinity,
     this.radius = 10,
-    this.color = AppColor.primary,
+    this.color = AppColors.primary,
     this.elevation,
   });
 

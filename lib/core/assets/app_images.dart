@@ -1,0 +1,26 @@
+abstract final class AppImages {
+  static const _path = 'assets/images';
+  static const apple = '$_path/apple.png';
+  static const bakerySnacks = '$_path/bakery-snacks.png';
+  static const bellPepperRed = '$_path/bell-pepper-red.png';
+  static const beverages = '$_path/beverages.png';
+  static const cartIcon = '$_path/cart-icon.png';
+  static const coca = '$_path/coca.png';
+  static const coke = '$_path/coke.png';
+  static const cooking = '$_path/coocking-oil.png';
+  static const dairyEggs = '$_path/dairy-eggs.png';
+  static const exploreIcon = '$_path/explore-icon.png';
+  static const favoriteIcon = '$_path/favorite-icon.png';
+  static const freshFruits = '$_path/fresh-fruits.png';
+  static const ginger = '$_path/ginger.png';
+  static const logo = '$_path/logo.png';
+  static const meetFish = '$_path/meet-fish.png';
+  static const onbording = '$_path/onbording.png';
+  static const orange = '$_path/orange.png';
+  static const organicBananas = '$_path/organic-bananas.png';
+  static const pepsi = '$_path/pepsi.png';
+  static const shopIcon = '$_path/shop-icon.png';
+  static const sprite = '$_path/sprite.png';
+  static const userIcon = '$_path/user-icon.png';
+  static const eggChickenRed = '$_path/egg-chicken-red.png';
+}

@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:task/views/widgets/custom_text_form_field.dart';
 
 import '../../core/constant/app_color.dart';
+import '../../core/theme/app_colors.dart';
 import 'custom_button.dart';
 
 class AddItemWidget extends StatelessWidget {
@@ -23,7 +24,7 @@ class AddItemWidget extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.w400,
                   fontSize: 24,
-                  color: AppColor.fontColor,
+                  color: AppColors.fontColor,
                 ),
               ),
               const Spacer(),
@@ -65,7 +66,7 @@ class AddItemWidget extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 18,
-                      color: AppColor.white,
+                      color: AppColors.white,
                     ),
                   ),
                 ),

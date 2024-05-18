@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../core/constant/app_color.dart';
 import '../../core/constant/app_svgs.dart';
+import '../../core/theme/app_colors.dart';
 import 'custom_button.dart';
 import 'custom_row_with_icon.dart';
 
@@ -25,7 +26,7 @@ class CheckoutWidget extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.w400,
                   fontSize: 24,
-                  color: AppColor.fontColor,
+                  color: AppColors.fontColor,
                 ),
               ),
               const Spacer(),
@@ -77,7 +78,7 @@ class CheckoutWidget extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 14,
-                              color: AppColor.grey,
+                              color: AppColors.grey,
                             ),
                           ),
                           TextSpan(
@@ -85,7 +86,7 @@ class CheckoutWidget extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 14,
-                              color: AppColor.black,
+                              color: AppColors.black,
                             ),
                           ),
                           TextSpan(
@@ -93,7 +94,7 @@ class CheckoutWidget extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 14,
-                              color: AppColor.grey,
+                              color: AppColors.grey,
                             ),
                           ),
                           TextSpan(
@@ -101,7 +102,7 @@ class CheckoutWidget extends StatelessWidget {
                             style: TextStyle(
                               fontWeight: FontWeight.w400,
                               fontSize: 14,
-                              color: AppColor.black,
+                              color: AppColors.black,
                             ),
                           ),
                         ],
@@ -119,7 +120,7 @@ class CheckoutWidget extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       fontSize: 18,
-                      color: AppColor.white,
+                      color: AppColors.white,
                     ),
                   ),
                 ),

@@ -3,6 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:task/core/constant/app_color.dart';
 import 'package:task/core/constant/app_images.dart';
 
+import '../../core/theme/app_colors.dart';
 import '../widgets/custom_button.dart';
 
 class OrderAcceptedScreen extends StatelessWidget {
@@ -25,7 +26,7 @@ class OrderAcceptedScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.w400,
-                  color: AppColor.black,
+                  color: AppColors.black,
                 ),
               ),
               const Gap(16),
@@ -35,7 +36,7 @@ class OrderAcceptedScreen extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w400,
-                  color: AppColor.grey,
+                  color: AppColors.grey,
                 ),
               ),
               const Spacer(),
@@ -48,7 +49,7 @@ class OrderAcceptedScreen extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 18,
-                    color: AppColor.white,
+                    color: AppColors.white,
                   ),
                 ),
               ),
@@ -62,7 +63,7 @@ class OrderAcceptedScreen extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 18,
-                    color: AppColor.fontColor,
+                    color: AppColors.fontColor,
                   ),
                 ),
               ),

@@ -6,6 +6,7 @@ import 'package:task/core/constant/app_color.dart';
 import 'package:task/routers.dart';
 
 import '../../core/constant/app_svgs.dart';
+import '../../core/theme/app_colors.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -26,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.primary,
+      backgroundColor: AppColors.primary,
       body: Center(
         child: FadeIn(
           duration: const Duration(seconds: 3),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../core/constant/app_color.dart';
+import '../../core/theme/app_colors.dart';
 
 class CustomRowWithIcon extends StatelessWidget {
   const CustomRowWithIcon({
@@ -25,7 +26,7 @@ class CustomRowWithIcon extends StatelessWidget {
           style: const TextStyle(
             fontWeight: FontWeight.w400,
             fontSize: 18,
-            color: AppColor.grey,
+            color: AppColors.grey,
           ),
         ),
         const Spacer(),
@@ -36,7 +37,7 @@ class CustomRowWithIcon extends StatelessWidget {
             style: const TextStyle(
               fontWeight: FontWeight.w400,
               fontSize: 16,
-              color: AppColor.fontColor,
+              color: AppColors.fontColor,
             ),
           ),
         IconButton(
