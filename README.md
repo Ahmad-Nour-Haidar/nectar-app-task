@@ -4,7 +4,9 @@
 
 ### This is an awesome task. For training in Flutter framework
 
-![add-item.png](assets%2Fapp-preview%2Fadd-item.png)
+### App preview
+
+![add-item.png](assets%2Fapp-preview%2Fadd-item.png | width=100)
 
 ![beverages.png](assets%2Fapp-preview%2Fbeverages.png)
 
