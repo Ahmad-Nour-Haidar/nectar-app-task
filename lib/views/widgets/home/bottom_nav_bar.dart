@@ -50,7 +50,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                       widget.pageController.animateToPage(
                         index,
                         duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeIn,
+                        curve: Curves.easeInOut,
                       );
                       widget.onTap ?? (index);
                     },
